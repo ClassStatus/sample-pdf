@@ -5,7 +5,7 @@ import tempfile
 import shutil
 import os
 import uuid
-from app.processor import process_pdf
+from processor import process_pdf
 
 app = FastAPI()
 
