@@ -10,9 +10,8 @@ from processor import main
 app = FastAPI()
 
 @app.get("/", response_class=HTMLResponse)
-async def form_page():
-    with open("static/index.html", "r") as f:
-        return f.read()
+def home():
+    return "<h2>Welcome to the PDF Processor API</h2>"
 
 @app.post("/extract/")
 async def extract(file: UploadFile = File(...)):
