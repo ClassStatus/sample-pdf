@@ -6,3 +6,8 @@ pytesseract
 pillow
 pymupdf
 python-multipart
+pdf2image
+pdfplumber
+camelot-py[cv]
+openpyxl
+scikit-learn
